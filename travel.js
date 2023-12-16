@@ -5,15 +5,17 @@ let fc=document.querySelector('.fc');
 let search_bar=document.querySelector('.search-bar');
 let vidbtn=document.querySelectorAll('.vid-btn');
 
+//Display Login Form
 log.addEventListener('click', ()=>{
     fc.style.top='0';
 });
 
 clos.addEventListener('click',()=>{
-    fc.style.top='-120%';
+    fc.style.top='-150%';
 });
 
 
+//Change video
 vidbtn.forEach(btn =>{
     btn.addEventListener('click', ()=>{
         document.querySelector('.vid-con .active').classList.remove('active');
@@ -24,6 +26,7 @@ vidbtn.forEach(btn =>{
     
 });
 
+//SwiperDemos
 var swiper = new Swiper(".review-slider", {
     spaceBetween: 20,
     loop:true,
